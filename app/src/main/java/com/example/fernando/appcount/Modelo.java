@@ -5,11 +5,14 @@ package com.example.fernando.appcount;
  */
 
 public class Modelo {
-    private Integer counter;
+    private Integer counter = 0; //Inicializamos variables
     public Integer getCounter(){
         return counter;
     }
     public void incrementar(){
         this.counter++;
+    }
+    public void decrementar(){
+        this.counter--;
     }
 }
