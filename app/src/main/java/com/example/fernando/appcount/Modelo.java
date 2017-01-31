@@ -5,4 +5,11 @@ package com.example.fernando.appcount;
  */
 
 public class Modelo {
+    private Integer counter;
+    public Integer getCounter(){
+        return counter;
+    }
+    public void incrementar(){
+        this.counter++;
+    }
 }
