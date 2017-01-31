@@ -11,23 +11,23 @@ public class MainActivity extends Activity {
     private Button botonMas, botonMenos;
     private Integer counter;
 
-    class MyButtonListener1 implements View.OnClickListener{
-        //Codigo del cambio
-        @Override
-        public void onClick(View v) {
-            counter++;
-            display.setText(counter.toString());
-        }
-
-    }
-    class MyButtonListener2 implements View.OnClickListener{
-
-        @Override
-        public void onClick(View v) {
-            counter--;
-            display.setText(counter.toString());
-        }
-    }
+//    class MyButtonListener1 implements View.OnClickListener{
+//        //Codigo del cambio
+//        @Override
+//        public void onClick(View v) {
+//            counter++;
+//            display.setText(counter.toString());
+//        }
+//
+//    }
+//    class MyButtonListener2 implements View.OnClickListener{
+//
+//        @Override
+//        public void onClick(View v) {
+//            counter--;
+//            display.setText(counter.toString());
+//        }
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,10 +40,10 @@ public class MainActivity extends Activity {
         botonMas = (Button)findViewById(R.id.button);
         display = (TextView)findViewById(R.id.display);
 
-        botonMas.setOnClickListener(new MyButtonListener1());
+        //botonMas.setOnClickListener(new MyButtonListener1());
 
         botonMenos = (Button)findViewById(R.id.button2);
-        botonMenos.setOnClickListener(new MyButtonListener2());
+        //botonMenos.setOnClickListener(new MyButtonListener2());
     }
     }
 
